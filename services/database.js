@@ -11,13 +11,13 @@ var qs = require("querystring");
 var aes256 = require('aes256');
 var crypto = require('crypto');
 var async = require('async')
-const admin = require("firebase-admin");
-const serviceAccount = require('../keys/' + stage.private_key_path);
+// const admin = require("firebase-admin");
+// const serviceAccount = require('../keys/' + stage.private_key_path);
 
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    databaseURL: stage.databaseURL
-});
+// admin.initializeApp({
+//     credential: admin.credential.cert(serviceAccount),
+//     databaseURL: stage.databaseURL
+// });
 
 let CONSTANTS = require('../lib/constants');
 
