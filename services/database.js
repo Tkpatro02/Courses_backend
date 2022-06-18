@@ -1,7 +1,7 @@
 
 var pool = require('../connections/mysql');
 const environment = process.env.NODE_ENV;
-const stage = require('../config')[environment];
+const stage = require('../.config')[environment];
 const jwt = require('jsonwebtoken');
 const secret = stage.JWT_SECRET;
 var nodemailer = require('nodemailer');
