@@ -1,7 +1,7 @@
 var mysql = require('mysql');
 var util = require('util');
 const environment = process.env.NODE_ENV;
-const stage = require('../.config')[environment];
+const stage = require('../config')[environment];
 
 var pool = mysql.createPool({
     connectionLimit: stage.mysql_connection_limit,

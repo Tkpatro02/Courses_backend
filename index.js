@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 const environment = process.env.NODE_ENV;
-const stage = require('.config')[environment];
+const stage = require("./config")[environment];
 const morgan = require('morgan');
 const compression = require('compression');
 

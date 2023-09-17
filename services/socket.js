@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const environment = process.env.NODE_ENV;
-const stage = require('../.config')[environment];
+const stage = require('../config')[environment];
 const secret = stage.JWT_SECRET;
 const pool = require('../connections/mysql');
 const morgan = require('morgan');
